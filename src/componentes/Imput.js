@@ -10,7 +10,9 @@ function Imput(){
 
   const [productos, setProductos] = useState([]);
   const {categoria} = useParams ();
-  const [filter, setFilter] = useState("");
+
+  const [filtro, setFilter] = useState("");
+
   const [resultadoBusqueda, setResultadoBusqueda]= useState([])
 
 
@@ -26,7 +28,7 @@ function Imput(){
   }
   
 
-  useEffect(() => {
+/*   useEffect(() => {
     const db = getFirestore(); 
 
     const itemsCollection = collection(db, "items");
@@ -39,11 +41,11 @@ function Imput(){
     }); 
 },
  [] );
-
+ */
 
 return ( 
           <div>
-            <input id="filter" name ="filter" type="text" value ={filter}onChange={changeHandler}   />
+            <input id="filter" name ="filter" type="text" value ={filtro}onChange={changeHandler}   />
             { resultadoBusqueda.map((el)=>(
                 <Item 
                key={el.id}

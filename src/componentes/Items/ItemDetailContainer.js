@@ -5,7 +5,7 @@ import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 
  
-import {collection ,doc ,getDocs , getFirestore, query , where } from "firebase/firestore"
+import {collection , doc ,getDocs , getFirestore, query , where } from "firebase/firestore"
 
 
 function ItemDetailContainer() {

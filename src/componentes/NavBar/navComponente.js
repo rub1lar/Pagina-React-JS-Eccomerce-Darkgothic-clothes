@@ -22,27 +22,19 @@ return (
             className="me-auto my-2 my-lg-0 mx-auto letra"
             style={{ maxHeight: '130px' }}
           > 
-          
-             <  Link to = { "/category/ropa"}  className="navar" >ROPA </Link>
+               <Cart/>
+             <  Link to = { `/category/ropa`}  className="navar" >ROPA </Link>
              <  Link to = { "/category/zapatillas"}  className="navar" >ZAPATILLAS </Link>
              <  Link to = { "/category/accesorios"}  className="navar" >ACCESORIOS </Link>
-             <  Link to = "/filtro"  className="navar" >BUSCAR </Link>          <Cart/>
-           
-            
-          </Nav>
-        
-      
+             <  Link to = "/filtro"  className="navar" >BUSCAR </Link>        
 
+          </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
     </div>
     
 </div>
-
-
 )
-
 }
-
 export default Navbarra;

@@ -23,10 +23,10 @@ const Footer = () => <footer className="page-footer font-small  ">
             <hr className="clearfix w-100 d-md-none pb-0"/>
             <div className="col-md-3 mb-md-0">
                 <h5 className="text-uppercase  pt-3">Que Buscas?</h5>
-                <ul className="list-unstyled text-decoration-none ">
-                    <li>  <  Link to = { "/category/Ropa"}  className="navar" >ROPA </Link></li>
-                    <li> <  Link to = { "/category/Zapatillas"}  className="navar" >ZAPATILLAS </Link></li>
-                    <li><  Link to = { "/category/Accesorios"}  className="navar" >ACCESORIOS </Link></li>
+                <ul className="list-unstyled text-decoration-none "> 
+                    <li>  <  Link to = { `/categoria/ropa`}  className="navar" >ROPA </Link></li>
+                    <li> <  Link to = { `/categoria/zapatillas`}  className="navar" >ZAPATILLAS </Link></li>
+                    <li><  Link to = { "/categoria/accesorios"}  className="navar" >ACCESORIOS </Link></li>
                     <li>  <  Link to = "/filtro"  className="navar" >BUSCAR </Link>  </li>
                 </ul>
 

@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import ItemLista from '../Items/ItemList';
 
-import {collection ,doc,getDocs , getFirestore } from "firebase/firestore"
+import {collection ,doc, getDocs , getFirestore,query, where } from "firebase/firestore"
 
 function ItemListContainer (props){
   const [productos, setProductos] = useState([]);
@@ -40,23 +40,25 @@ function ItemListContainer (props){
 
   useEffect(() => {
       const db = getFirestore(); 
-
       const itemsCollection = collection(db, "items");
-      
-      getDocs(itemsCollection).then((snapshop)=>{
-        if (snapshop.size===0){
-          console.log ( "no resultados");}
-        /*   if(id){
-            setProductos(items.filter((prod)=> prod.categoria === id))} */
-        setProductos(snapshop.docs.map((doc)=>({id: doc.id, ...doc.data() } )));
-      }); 
-  },
+      /* 
+        if (res.size===0){
+          alert ( "no resultados");} */
+          if (id){
+          const queryFilter = query(itemsCollection , where (`categoria`, `==` , id ))
+          getDocs(queryFilter).then (res =>  setProductos(res.docs.map((doc)=>({id: doc.id, ...doc.data() } ))))
+
+        }
+        else
+        getDocs(itemsCollection).then (res =>  setProductos(res.docs.map((doc)=>({id: doc.id, ...doc.data() } ))))
+       /*    setProductos(res.docs.map((doc)=>({id: doc.id, ...doc.data() } ))); */
+          
+          },
    [id] );
 
 return (
   <Fragment>
 <ItemLista productos={productos}/> 
-
 </Fragment>
 )
 

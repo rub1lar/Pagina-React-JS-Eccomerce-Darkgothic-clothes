@@ -1,0 +1,27 @@
+.body {
+
+    height: 50vw;
+display: flex;
+justify-content: space-around;
+align-items: center;
+align-content: center;
+background-color: rgba(33, 142, 209, 0.764);
+}
+
+.titulo{
+    margin: 0;
+    display: flex;
+justify-content: space-around;
+align-items: center;
+align-content: center;
+background-color: rgb(52, 64, 80);
+}
+.itemc {
+    padding-top: 1rem;
+    color: aliceblue;
+    background-color: rgb(50, 49, 49) !important;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}

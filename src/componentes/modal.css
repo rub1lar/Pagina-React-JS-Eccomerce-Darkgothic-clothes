@@ -1,0 +1,12 @@
+.modal {
+color: aliceblue;
+    position: inherit;
+    display: block;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+
+}
+.fondo{
+    background-color: rgb(41, 40, 40);
+}

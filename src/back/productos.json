@@ -1,0 +1,40 @@
+
+[
+    {
+        "id": "1",
+        "stock": "1234",
+        "categoria":"Ropa",
+        "nombre": "Camiseta Dark",
+        "detalle":"Camiseta negra de algodon premium bordada en la Isla de Tailandia",
+        "valor":50,
+        "img":"https://cdn.shopify.com/s/files/1/1014/6323/products/BLINDMIND-TSHIRT-B_06535ac6-00d3-4c98-b032-3bffa579ca99_x1600.jpg?v=1561636552"
+    },
+    {
+        "id": "2",
+        "stock": "134",
+        "categoria":"Accesorios",
+        "nombre": "Cartera Calavera",
+        "detalle":"Cartera negra  premium de cocodrilos jamaiquinos",
+
+        "valor":20,
+        "img": "https://cdn.shopify.com/s/files/1/1014/6323/products/SACRED-MOON-SATCHEL-BAG-W-B_c1a6769a-c238-4fde-b8bb-b8b9df0edd64_x1600.jpg?v=1662372285"
+    },
+    {
+        "id": "3",
+        "stock": "152",
+        "categoria":"Zapatillas",
+        "nombre": "Botas Cuero",
+        "detalle":"Bota de cuero negra con detalles en plateado",
+        "valor":150,
+        "img": "https://cdn.shopify.com/s/files/1/1014/6323/products/CRESCENT-BOOTS-W-B_x1600.jpg?v=1662372295"
+    },
+    {
+        "id": "4",
+        "stock": "12",
+        "categoria":"Zapatillas",
+        "nombre": "Botas Largas Negras",
+        "detalle":"Botas largas de cuero estilo dark  con plataforma",
+        "valor":250,
+        "img": "https://cdn.shopify.com/s/files/1/1014/6323/products/FALL-OUT-COMBAT-BOOTS-C_400x600.jpg?v=1643294910"
+    }
+]

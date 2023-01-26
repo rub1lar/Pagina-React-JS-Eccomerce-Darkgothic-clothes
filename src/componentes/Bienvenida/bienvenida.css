@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Press+Start+2P&display=swap');
+.bienvenida{
+    font-family: 'Cinzel', serif;
+    background-color: black;
+    color: aliceblue ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

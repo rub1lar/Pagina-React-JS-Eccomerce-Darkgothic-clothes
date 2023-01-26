@@ -1,18 +1,24 @@
-import React, { Fragment } from 'react'
-import { useEffect } from 'react';
-import { useState } from 'react';
-import { useParams } from 'react-router-dom';
-import ItemLista from '../Items/ItemList';
+import React, { Fragment } from "react";
+import { useEffect } from "react";
+import { useState } from "react";
+import { useParams } from "react-router-dom";
+import ItemLista from "../Items/ItemList";
 
-import {collection ,doc, getDocs , getFirestore,query, where } from "firebase/firestore"
+import {
+  collection,
+  doc,
+  getDocs,
+  getFirestore,
+  query,
+  where,
+} from "firebase/firestore";
 
-function ItemListContainer (props){
+function ItemListContainer(props) {
   const [productos, setProductos] = useState([]);
-  const {id} = useParams();
+  const { id } = useParams();
   //SIMULACION API
 
-  
-/*   const listado = () => {
+  /*   const listado = () => {
     let items = require("../../back/productos.json")
     return new Promise ((resolve, reject) => {
         setTimeout(() => {
@@ -39,29 +45,28 @@ function ItemListContainer (props){
  */
 
   useEffect(() => {
-      const db = getFirestore(); 
-      const itemsCollection = collection(db, "items");
-      /* 
+    const db = getFirestore();
+    const itemsCollection = collection(db, "items");
+    /* 
         if (res.size===0){
           alert ( "no resultados");} */
-          if (id){
-          const queryFilter = query(itemsCollection , where (`categoria`, `==` , id ))
-          getDocs(queryFilter).then (res =>  setProductos(res.docs.map((doc)=>({id: doc.id, ...doc.data() } ))))
+    if (id) {
+      const queryFilter = query(itemsCollection, where(`categoria`, `==`, id));
+      getDocs(queryFilter).then((res) =>
+        setProductos(res.docs.map((doc) => ({ id: doc.id, ...doc.data() })))
+      );
+    } else
+      getDocs(itemsCollection).then((res) =>
+        setProductos(res.docs.map((doc) => ({ id: doc.id, ...doc.data() })))
+      );
+    /*    setProductos(res.docs.map((doc)=>({id: doc.id, ...doc.data() } ))); */
+  }, [id]);
 
-        }
-        else
-        getDocs(itemsCollection).then (res =>  setProductos(res.docs.map((doc)=>({id: doc.id, ...doc.data() } ))))
-       /*    setProductos(res.docs.map((doc)=>({id: doc.id, ...doc.data() } ))); */
-          
-          },
-   [id] );
-
-return (
-  <Fragment>
-<ItemLista productos={productos}/> 
-</Fragment>
-)
-
+  return (
+    <Fragment>
+      <ItemLista productos={productos} />
+    </Fragment>
+  );
 }
 
 export default ItemListContainer;

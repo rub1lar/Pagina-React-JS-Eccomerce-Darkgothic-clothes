@@ -23,9 +23,9 @@ return (
             style={{ maxHeight: '130px' }}
           > 
                <Cart/>
-             <  Link to = { `/category/ropa`}  className="navar" >ROPA </Link>
-             <  Link to = { "/category/zapatillas"}  className="navar" >ZAPATILLAS </Link>
-             <  Link to = { "/category/accesorios"}  className="navar" >ACCESORIOS </Link>
+             <  Link to = { "/categoria/ropa"}  className="navar" >ROPA </Link>
+             <  Link to = { "/categoria/zapatillas"}  className="navar" >ZAPATILLAS </Link>
+             <  Link to = { "/categoria/accesorios"}  className="navar" >ACCESORIOS </Link>
              <  Link to = "/filtro"  className="navar" >BUSCAR </Link>        
 
           </Nav>

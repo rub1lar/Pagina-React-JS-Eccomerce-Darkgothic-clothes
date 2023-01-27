@@ -14,24 +14,33 @@ function ItemDetail(props) {
   }
 
   return (
-    <div className="detail">
-      <div>
-        <div className="detail2 mx-auto">
-          <img className="detail2 mx-auto" src={props.img} alt="productimage" />
-        </div>
+    <div className="itemDetail">
 
-        <div className="detail px-5 pb-5 text-center">
-          <h5 className="text-xl text-white font-semibold">{props.nombre}</h5>
-          <h5 className="text-xl text-grey font-semibold">{props.categoria}</h5>
-          <h5 className="text-xl text-white font-semibold">{props.detalle}</h5>
+      <div>
+
+
+
+       
+
+        <div >
+       
+          <h5 className="tituloDetail">{props.nombre}</h5>
+          {/* <h5 >{props.categoria}</h5> */}
+           <div className="detail2 mx-auto">
+          <img className="imagenDetail mx-auto" src={props.img} alt="productimage" />
+        </div>
+          <h5 className="detalles">{props.detalle}</h5>
 
           <div className="flex-col  items-center ml-24"></div>
-          <span className=" font-bold"> Precio : {props.valor} </span>
+          <span className=" font-bold precio"> Precio $ : {props.valor} </span>
           {!cargado ? (
             <ItemCount stock={props.stock} initial={1} agregarCarrito={agregarCarrito} />
           ) : <Link to= "/Cart"> Ir al carrito</Link>
            }
         </div>
+
+
+        
       </div>
 
     </div>

@@ -3,6 +3,7 @@
 import ItemDetail from "./ItemDetail";
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
+import "./detail.css";
 
  
 import {collection , doc ,getDocs , getFirestore, query , where } from "firebase/firestore"
@@ -31,7 +32,10 @@ function ItemDetailContainer() {
 
  return(
   
-        <div >   
+   <div className="principal" >   
+
+     
+
         {loading ? productos : 
         productos.filter((prod) => prod.id.includes(productoid)).map((el)=>(
           

@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@700&display=swap');
 .detail {
     background-color: black;
     }
     .detail2 {
-    background-color: black;
+
         max-width: 300px!important;
     
         }
@@ -12,9 +13,20 @@
 .principal {
     background-color: rgb(31, 29, 29);
 }
+
 .imagen{
     border-radius: 20px;
     max-width: 200px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+
+}
+.imagenDetail{
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    border-color: black;
+    border-radius: 20px;
+    max-width: 300px;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 1rem;
@@ -30,4 +42,87 @@
     margin: auto;
     padding: 1rem;
 
+}
+.itemDetail{
+    padding: 1rem;
+    font-family: 'Aboreto', cursive;
+    font-weight: 600;
+    border-radius: 20PX;
+    color: aliceblue;
+    background-color: rgb(50, 49, 49) !important;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    
+   
+    
+}
+
+
+.button-22 {
+   
+    align-items: center;
+  appearance: button;
+  background-color: #1d1d1d;
+  border-radius: 8px;
+  border-color: black;
+
+  box-shadow: rgba(255, 255, 255, 0.26) 0 1px 2px inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  font-family: "RM Neue",sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  padding: 10px 21px;
+  text-align: center;
+  text-transform: none;
+  transition: color .13s ease-in-out,background .13s ease-in-out,opacity .13s ease-in-out,box-shadow .13s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+
+  
+}
+
+.button-22:active {
+  background-color: #201cff;
+}
+
+.button-22:hover {
+  background-color: #201cff;
+}
+.botonAgregar:hover {
+    background-color: #201cff;
+  }
+.botonAgregar {
+    border-color: black;
+    border-radius: 20px;
+   margin-top: 1rem;
+   background-color: #1d1d1d;
+   color: aliceblue;
+}
+
+
+.precio {
+    font-weight: 650;
+    background-image:url(fondo.jpg) ;
+    background-size: cover;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.detalles {
+    font-size: 1rem!important;
+}
+.tituloDetail{
+    font-size: 1.5rem;
+    font-weight: 700;
 }

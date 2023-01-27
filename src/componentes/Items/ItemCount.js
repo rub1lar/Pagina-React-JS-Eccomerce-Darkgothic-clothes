@@ -21,15 +21,18 @@ export default function ItemCount({ stock, initial, agregarCarrito }) {
     }
     
     return (
-        <div>
+        <div className='d-block'>
             <h1 className='text-white font-bold mt-2'>Stock Actual: {stock}</h1>
             <div className='inline-flex '>
-                <button className="fill-white h-7 w-7 p-1 hover:bg-slate-700 rounded-full mx-3" onClick={onSubstract}>-</button>
-                <h1 className='text-white font-bold mx-5 text-xl'>{value}</h1>
-                <button className="fill-white  h-7 w-7 hover:bg-slate-700  rounded-full  mx-3" onClick={onAdd}>+</button>
-            </div>
-            <button onClick={() => agregarCarrito(value)}> Agregar al carrito</button>   
 
+                <button className="button-22" onClick={onSubstract}>-</button>
+                <h1 className='text-white font-bold mx-5'>{value}</h1>
+                <button className="button-22"onClick={onAdd}>+</button>
+
+            </div>
+            <div>
+            <button className="botonAgregar" onClick={() => agregarCarrito(value)}> Agregar al carrito</button>   
+            </div>
         </div>
     );
 

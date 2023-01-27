@@ -9,3 +9,25 @@
 .inline-flex{
     display: inline-flex!important;
 }
+.principal {
+    background-color: rgb(31, 29, 29);
+}
+.imagen{
+    border-radius: 20px;
+    max-width: 200px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+
+}
+
+.principal {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: space-evenly;
+    margin: auto;
+    padding: 1rem;
+
+}

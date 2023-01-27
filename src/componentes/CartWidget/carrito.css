@@ -1,6 +1,14 @@
 .carrito{
-    display: flex;
-width: 28px;
-margin-top: 0.4rem;
-margin-right: 1rem;
+        margin-right: 2rem;
+display: flex;
+   border-radius: 10px;
+}
+.numeros {
+    
+    align-items: center;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    border-color: aliceblue;
+    border-radius: 50px;
+    background-color: rgb(199, 199, 199);
 }

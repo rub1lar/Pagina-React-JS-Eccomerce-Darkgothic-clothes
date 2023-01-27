@@ -1,8 +1,9 @@
 import Item from "./Items";
+import "./detail.css";
  function ItemLista({productos}){
 
   return ( 
-    <div >
+    <div className="principal">
       {productos.map((el)=> <Item 
         key={el.id}
         id={el.id}

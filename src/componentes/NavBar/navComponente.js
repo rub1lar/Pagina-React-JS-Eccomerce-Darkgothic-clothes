@@ -11,19 +11,19 @@ import {Link} from  "react-router-dom"
 function Navbarra () {
 return (
 <div> 
-<div className="App bg-dark"> 
-    <Navbar expand="lg">
+<div className="bg-dark"> 
+    <Navbar expand="md">
       <Container fluid>
       <NoMercy/>
-        <Navbar.Toggle aria-controls="navbarScroll" />
-        <Navbar.Collapse id="navbarScroll">
+        <Navbar.Toggle  />
+        <Navbar.Collapse >
           
-        <Nav 
-            className="me-auto my-2 my-lg-0 mx-auto letra"
-            style={{ maxHeight: '130px' }}
+        <Nav className="nav"
+          /*   className="me-auto my-2 my-lg-0 mx-auto letra"
+            style={{ maxHeight: '130px' }} */
           > 
                <Cart/>
-             <  Link to = { "/categoria/ropa"}  className="navar" >ROPA </Link>
+             <  Link to = { "/categoria/ropa"} className="navar" >ROPA </Link>
              <  Link to = { "/categoria/zapatillas"}  className="navar" >ZAPATILLAS </Link>
              <  Link to = { "/categoria/accesorios"}  className="navar" >ACCESORIOS </Link>
              <  Link to = "/filtro"  className="navar" >BUSCAR </Link>        

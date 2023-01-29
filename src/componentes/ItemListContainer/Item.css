@@ -19,7 +19,7 @@ align-items: center;
 align-content: center;
 background-color: rgb(52, 64, 80);
 }
-.itemc {
+.itemc { 
     padding: 1rem;
     font-family: 'Aboreto', cursive;
     font-weight: 600;

@@ -15,7 +15,7 @@ import "./detail.css";
                             <span >{props.valor}</span>
                        
                             <div className="">
-                                <NavLink to =  {`/item/${props.id}`} >Precio y Detalles!</NavLink>
+                                <NavLink to =  {`/item/${props.id}`} className="botonAgregar" >Precio y Detalles!</NavLink>
                             </div>
                         </div>
             </div>

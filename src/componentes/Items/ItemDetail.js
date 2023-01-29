@@ -32,11 +32,13 @@ function ItemDetail(props) {
           <h5 className="detalles">{props.detalle}</h5>
 
           <div className="flex-col  items-center ml-24"></div>
-          <span className=" font-bold precio"> Precio $ : {props.valor} </span>
+          <div> Precio $ : {props.valor} </div>
           {!cargado ? (
             <ItemCount stock={props.stock} initial={1} agregarCarrito={agregarCarrito} />
-          ) : <Link to= "/Cart"> Ir al carrito</Link>
-           }
+          )
+           :  <Link to= "/Cart"  className="botonAgregar"> Ir al carrito</Link>                                                           
+          }
+          <div> <  Link to =  "/" className="botonAgregar " >Seguir comprando </Link></div>
         </div>
 
 

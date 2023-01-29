@@ -8,5 +8,18 @@ color: aliceblue;
 
 }
 .fondo{
+    justify-content: space-around;
+    display: flex;
     background-color: rgb(41, 40, 40);
+}
+.centra {
+    
+    display: inline-flex;
+    margin: 1rem;
+    justify-content:center ;
+}
+.modalear {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }

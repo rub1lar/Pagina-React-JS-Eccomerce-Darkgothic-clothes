@@ -8,28 +8,30 @@ function CartItem(props) {
 
     console.log(props, 'cartItem')
     return (
-        <div className='itemc'>
-            <div className='w-full max-w-sm  rounded-lg'>
-                <div className='px-5 pb-5'>
+        <div className=''>
+        <div className='itemc centra'>
+            <div className=' centra'>
+                <div  >
                     <h5 className='text-xl font-semibold '>
                         {props.categoria}
                     </h5>
                     <h5 className='text-xl font-semibold '>{props.cantidad}</h5> 
                     <h5 className='text-xl font-semibold '>{props.nombre}</h5>
-                    <img className='p-10 w-50 mx-auto' src={props.img} alt='' />
-                    <div className='flex justify-between items-center'>
+                    <img className='imagen' src={props.img} alt='' />
+                    <div >
                         <span>${props.valor}</span>
                         {<CartItemCount stock={props.stock} initial={1}  />}
 
-                        <button onClick={() => removeItem(props.id)}>
-                            Remover Toda Esta Categoria
+                        <button className="botonAgregar"onClick={() => removeItem(props.id)}>
+                        Borrar Todo
                         </button>   
-                       {props.cantidad > 1 &&  <button  onClick={() => quitarUna (props.id)}>
-                            Borrar una Unidad
+                       {props.cantidad > 1 &&  <button   className="botonAgregar" onClick={() => quitarUna (props.id)}>
+                            Borrar Unidad
                         </button>   }
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     );
 }

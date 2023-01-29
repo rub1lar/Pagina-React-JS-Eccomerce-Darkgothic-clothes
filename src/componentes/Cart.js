@@ -25,7 +25,7 @@ function Cart(props) {
     return (<div className="fondo">
        <>
        {cart.length === 0 
-       ?<p>Tu carrito esta vacio! <Link to='/'>Podes comenzar tu compra aqui</Link></p>
+       ? <p className="text-white ">Tu carrito esta vacio! <Link to='/' className="botonAgregar">Podes comenzar tu compra aqui</Link>  </p>
         : <div>
         <div>
       {cart.map((el) => (
@@ -42,15 +42,15 @@ function Cart(props) {
           ))}  
               </div> 
               <div>
-              <div className= "d-flex">
-              <button className="btn btn-primary" onClick={() => clear()}>
-                      VACIAR CARRITO
+              <div className= "modalear">
+             
+                  <h4 className="text-white  m-3"> Cantidad Productos:{cartQuantity()}</h4>
+                  <h4 className=" text-white   m-3"> subtotal sin IVA:${cartTotal()}</h4>
+          <button className="botonAgregar" onClick={resumenPrecio}>
+        Agregar IVA
+     </button> <button className="botonAgregar" onClick={() => clear()}>
+                      Vaciar Carrito
                   </button>
-                  <h4 className="text-white  m-3"> TOTAL DE ITEMS:{cartQuantity()}</h4>
-                  <h4 className=" text-white   m-3"> subtotal:${cartTotal()}</h4>
-          <button className="btn btn-primary" onClick={resumenPrecio}>
-        Actualizar resumen total con iva
-     </button>
 </div>
      <div className="text-white">
           <h2 >Subtotal: </h2>

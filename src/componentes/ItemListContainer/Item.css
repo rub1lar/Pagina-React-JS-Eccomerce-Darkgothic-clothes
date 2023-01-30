@@ -20,7 +20,8 @@ align-content: center;
 background-color: rgb(52, 64, 80);
 }
 .itemc { 
-   
+    border: ridge;
+    border-color: rgb(6, 5, 5);
     padding: 1rem;
     font-family: 'Aboreto', cursive;
     font-weight: 600;

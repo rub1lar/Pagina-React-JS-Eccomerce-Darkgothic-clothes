@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 .modal {
 color: aliceblue;
     position: inherit;
@@ -35,4 +37,12 @@ flex-wrap: wrap;
 .ffl{
     display: flex;
 
+}
+
+.font{
+    font-family: 'Bebas Neue', cursive;
+}
+.fondoIVA{
+    background-color: black;
+    border-radius: 20px;
 }

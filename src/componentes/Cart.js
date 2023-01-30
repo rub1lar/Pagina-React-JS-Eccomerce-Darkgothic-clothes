@@ -44,8 +44,8 @@ function Cart(props) {
               <div>
               <div className= "modalear">
              
-                  <h4 className="text-white  m-3"> Cantidad Productos:{cartQuantity()}</h4>
-                  <h4 className=" text-white   m-3"> subtotal sin IVA:${cartTotal()}</h4>
+                  <h4 className="text-white  m-3 font fondoIVA p-3"> Cantidad Productos: {cartQuantity()}</h4>
+                  <h4 className=" text-white   m-3 font fondoIVA p-3"> subtotal sin IVA: $ {cartTotal()}</h4>
                   </div>
 
                   <div className="cartItem ">
@@ -55,16 +55,17 @@ function Cart(props) {
                       Vaciar Carrito
                   </button>
                   </div>
-     <div className="text-white">
-          <h2 >Subtotal: </h2>
-          <h1>$ {total[0]} </h1>
-          <h2 >IVA: </h2>
-          <h1 >$ {total[1]} </h1>
-          <h2>Total: </h2>
-          <h1 >$ {total[2]} </h1>
+     <div className="text-white font d-flex justify-content-evenly m-3 fondoIVA">
+          <h2 >Subtotal: $ {total[0]}</h2>
+       
+          <h2 >IVA: $ {total[1]}</h2>
+       
+          <h2>Total: $ {total[2]} </h2>
+         
 
-          <InputModal cart={cart} valorTotal={total[2]}/> 
       </div>
+      <div className="text-white font  "> 
+          <InputModal cart={cart} valorTotal={total[2]}/> </div>
 
 
 </div>

@@ -36,7 +36,7 @@ function ItemDetail(props) {
           {!cargado ? (
             <ItemCount stock={props.stock} initial={1} agregarCarrito={agregarCarrito} />
           )
-           :  <Link to= "/Cart"  className="botonAgregar"> Ir al carrito</Link>                                                           
+           :  <Link to= "/Cart"  className="botonAgregar"> Ir al carrito</Link> 
           }
           <div> <  Link to =  "/" className="botonAgregar " >Seguir comprando </Link></div>
         </div>

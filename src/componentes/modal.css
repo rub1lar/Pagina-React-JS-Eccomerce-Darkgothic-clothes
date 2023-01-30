@@ -8,6 +8,8 @@ color: aliceblue;
 
 }
 .fondo{
+    justify-content: center;
+    flex-wrap: wrap;
     justify-content: space-around;
     display: flex;
     background-color: rgb(41, 40, 40);
@@ -22,4 +24,14 @@ color: aliceblue;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+}
+.cartItem{
+    justify-content: center;
+display: flex;
+flex-wrap: wrap;
+}
+
+.ffl{
+    display: flex;
+
 }

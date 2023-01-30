@@ -20,6 +20,7 @@ align-content: center;
 background-color: rgb(52, 64, 80);
 }
 .itemc { 
+   
     padding: 1rem;
     font-family: 'Aboreto', cursive;
     font-weight: 600;
@@ -33,7 +34,7 @@ background-color: rgb(52, 64, 80);
     margin-bottom: 1rem;
     padding-bottom: 1rem;
     width: 250px;
-    align-items: stretch
+    align-items: stretch;
 }
 #text-m {
     font-size: 1rem;

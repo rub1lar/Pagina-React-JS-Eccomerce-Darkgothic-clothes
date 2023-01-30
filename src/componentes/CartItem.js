@@ -8,17 +8,17 @@ function CartItem(props) {
 
     console.log(props, 'cartItem')
     return (
-        <div className=''>
+        <div className='ffl'>
         <div className='itemc centra'>
             <div className=' centra'>
                 <div  >
-                    <h5 className='text-xl font-semibold '>
+                   {/*  <h5 className='text-xl font-semibold '>
                         {props.categoria}
-                    </h5>
+                    </h5> */}
                     <h5 className='text-xl font-semibold '>{props.cantidad}</h5> 
                     <h5 className='text-xl font-semibold '>{props.nombre}</h5>
                     <img className='imagen' src={props.img} alt='' />
-                    <div >
+                    <div className='flex justify-between items-center'>
                         <span>${props.valor}</span>
                         {<CartItemCount stock={props.stock} initial={1}  />}
 

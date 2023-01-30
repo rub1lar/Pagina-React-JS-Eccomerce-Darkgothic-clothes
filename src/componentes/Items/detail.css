@@ -107,7 +107,7 @@
 
     background-color:#201cff;
   }
-.botonAgregar {
+.botonAgregar {font-size: 0.8rem;
    background-color: #1d1d1d;
    color: aliceblue;
    padding: 0.7rem;

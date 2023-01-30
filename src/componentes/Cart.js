@@ -26,8 +26,8 @@ function Cart(props) {
        <>
        {cart.length === 0 
        ? <p className="text-white ">Tu carrito esta vacio! <Link to='/' className="botonAgregar">Podes comenzar tu compra aqui</Link>  </p>
-        : <div>
-        <div>
+        : <div >
+        <div className="cartItem">
       {cart.map((el) => (
           <CartItem
           id={el.id}

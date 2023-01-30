@@ -12,7 +12,7 @@ import "./detail.css";
 
                     <h5 className="text-xl font-semibold ">{props.nombre}</h5>
                         <div className="">
-                            <span >{props.valor}</span>
+                            <span >$ {props.valor}</span>
                        
                             <div className="">
                                 <NavLink to =  {`/item/${props.id}`} className="botonAgregar" >Precio y Detalles!</NavLink>

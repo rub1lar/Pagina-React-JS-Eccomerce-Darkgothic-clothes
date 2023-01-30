@@ -10,7 +10,12 @@ color: aliceblue;
 
 }
 .fondo{
-    justify-content: center;
+
+
+
+
+    justify-content: space-around
+;
     flex-wrap: wrap;
     justify-content: space-around;
     display: flex;
@@ -45,4 +50,10 @@ flex-wrap: wrap;
 .fondoIVA{
     background-color: black;
     border-radius: 20px;
+}
+input {
+    
+    height: 1.4rem;
+    border-radius: 10px;
+ margin-left: 1rem;
 }

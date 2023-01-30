@@ -48,8 +48,9 @@ function Imput(){
 
 return ( 
           <div className="principal1">
-             <div>
-            <input id="filter" name ="filter" type="text" value ={filtro}onChange={changeHandler}   /></div>
+             <div className="d-inline-flex">
+           <h3 className="text-white font1 "> Buscar:  
+            <input className="m-1" id="filter" name ="filter" type="text" value ={filtro}onChange={changeHandler}   /> </h3></div>
 
             { resultadoBusqueda.map((el)=>(
                 <Item 

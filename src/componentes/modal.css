@@ -47,6 +47,10 @@ flex-wrap: wrap;
 .font{
     font-family: 'Bebas Neue', cursive;
 }
+.font1{
+    font-size: 1rem;
+    font-family: 'Bebas Neue', cursive;
+}
 .fondoIVA{
     background-color: black;
     border-radius: 20px;

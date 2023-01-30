@@ -4,7 +4,7 @@ import { useState } from "react";
 import {useParams} from "react-router-dom";
 import Item from "./Items/Items";
 import { useEffect } from "react";
-import {collection ,doc,getDocs , getFirestore } from "firebase/firestore"
+import {collection ,doc,getDocs , getFirestore ,query ,where} from "firebase/firestore"
 
 function Imput(){
 
@@ -14,6 +14,7 @@ function Imput(){
   const [filtro, setFilter] = useState("");
 
   const [resultadoBusqueda, setResultadoBusqueda]= useState([])
+  const { id } = useParams();
 
 
 
@@ -28,24 +29,28 @@ function Imput(){
   }
   
 
-/*   useEffect(() => {
-    const db = getFirestore(); 
-
+  useEffect(() => {
+    const db = getFirestore();
     const itemsCollection = collection(db, "items");
-    
-    getDocs(itemsCollection).then((snapshop)=>{
-      if (snapshop.size===0){
-        console.log ( "no resultados");
-      }
-      setProductos(snapshop.docs.map((doc)=>({id: doc.id, ...doc.data() } )));
-    }); 
-},
- [] );
- */
+  
+    if (id) {
+      
+      const queryFilter = query(itemsCollection, where(`nombre`, `==`, id));
+      
+      getDocs(queryFilter).then((res) =>
+        setProductos(res.docs.map((doc) => ({ id: doc.id, ...doc.data() })))
+      );
+    } else
+      getDocs(itemsCollection).then((res) =>
+        setProductos(res.docs.map((doc) => ({ id: doc.id, ...doc.data() })))
+      );
+  }, [id]);
 
 return ( 
-          <div>
-            <input id="filter" name ="filter" type="text" value ={filtro}onChange={changeHandler}   />
+          <div className="principal1">
+             <div>
+            <input id="filter" name ="filter" type="text" value ={filtro}onChange={changeHandler}   /></div>
+
             { resultadoBusqueda.map((el)=>(
                 <Item 
                key={el.id}
@@ -69,8 +74,6 @@ return (
                 />
               )) }
                </div>
-  
-        
               );
   } 
   export default Imput;

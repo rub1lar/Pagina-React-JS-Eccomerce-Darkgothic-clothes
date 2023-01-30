@@ -41,6 +41,17 @@
     justify-content: space-evenly;
     margin: auto;
     padding: 1rem;
+}
+.principal1 {
+    align-items: stretch;
+    background-color: rgb(31, 29, 29);
+    display: flex;
+    flex-wrap: wrap;
+  
+   align-content: center;
+    justify-content: space-evenly;
+    margin: auto;
+    padding: 1rem; 
 
 }
 .itemDetail{

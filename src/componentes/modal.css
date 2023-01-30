@@ -26,6 +26,7 @@ color: aliceblue;
     flex-wrap: wrap;
 }
 .cartItem{
+    
     justify-content: center;
 display: flex;
 flex-wrap: wrap;

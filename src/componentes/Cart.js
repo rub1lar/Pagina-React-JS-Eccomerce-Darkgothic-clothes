@@ -46,12 +46,15 @@ function Cart(props) {
              
                   <h4 className="text-white  m-3"> Cantidad Productos:{cartQuantity()}</h4>
                   <h4 className=" text-white   m-3"> subtotal sin IVA:${cartTotal()}</h4>
-          <button className="botonAgregar" onClick={resumenPrecio}>
-        Agregar IVA
-     </button> <button className="botonAgregar" onClick={() => clear()}>
+                  </div>
+
+                  <div className="cartItem ">
+           <button className="botonAgregar m-3" onClick={resumenPrecio}>
+         Agregar IVA
+       </button> <button className="botonAgregar m-3" onClick={() => clear()}>
                       Vaciar Carrito
                   </button>
-</div>
+                  </div>
      <div className="text-white">
           <h2 >Subtotal: </h2>
           <h1>$ {total[0]} </h1>

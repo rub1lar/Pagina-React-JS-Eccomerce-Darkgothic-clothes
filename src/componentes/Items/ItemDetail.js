@@ -31,7 +31,7 @@ function ItemDetail(props) {
         </div>
           <h5 className="detalles">{props.detalle}</h5>
 
-          <div className="flex-col  items-center ml-24"></div>
+          <div className="  items-center ml-24"></div>
           <div> Precio $ : {props.valor} </div>
           {!cargado ? (
             <ItemCount stock={props.stock} initial={1} agregarCarrito={agregarCarrito} />

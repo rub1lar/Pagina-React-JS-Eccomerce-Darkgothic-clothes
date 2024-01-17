@@ -36,7 +36,7 @@ const Footer = () => <footer className="page-footer font-small  ">
         </div>
     </div>
 
-    <div className=" text-center py-3 bg-dark text-white">© 2022 Copyright:
+    <div className=" text-center py-3 bg-dark text-white">©Copyright:
         <p >   Desarrollado Por: Sebastian Ariel </p>
     </div>
 

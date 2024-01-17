@@ -11,14 +11,14 @@ color: aliceblue;
 }
 .fondo{
 
-
-
+ display: flex;
+    flex-direction: column;
 
     justify-content: space-around
 ;
     flex-wrap: wrap;
     justify-content: space-around;
-    display: flex;
+   
     background-color: rgb(41, 40, 40);
 }
 .centra {
@@ -60,4 +60,46 @@ input {
     height: 1.4rem;
     border-radius: 10px;
  margin-left: 1rem;
+}
+
+
+.custom-form {
+    /* Estilos para la nueva clase "custom-form" */
+    background-color: #363636; /* Cambia el color de fondo según tus preferencias */
+    border: 1px solid #e2e8f0; /* Cambia el color del borde según tus preferencias */
+    box-shadow: 10px 10px 12px 14px rgb(19, 19, 19); /* Cambia las propiedades de la sombra según tus preferencias */
+    /* Otros estilos que desees agregar */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+margin: 2rem;
+border-radius: 10px;
+  }
+
+ .finalizar {
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  }
+
+  .botonesModal{
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  }
+.cerrar{
+    margin-left: 1.5rem;
+}
+
+.botonesGeneral{
+    border-radius: 10px;
+    background-color: #cecece;
+    margin-bottom: 1rem;
+}
+.vistaModal{
+    padding: 0.5rem;
+    border-radius: 10px;
+
 }

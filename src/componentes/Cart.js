@@ -25,7 +25,7 @@ function Cart(props) {
     return (<div className="fondo">
        <>
        {cart.length === 0 
-       ? <p className="text-white ">Tu carrito esta vacio! <Link to='/' className="botonAgregar">Podes comenzar tu compra aqui</Link>  </p>
+       ? <p className="text-white text-center">Tu carrito esta vacio! <Link to='/' className="botonAgregar">Podes comenzar tu compra aqui</Link>  </p>
         : <div >
         <div className="cartItem">
       {cart.map((el) => (
